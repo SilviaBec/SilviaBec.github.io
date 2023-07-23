@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="navbar.css"><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+             *{
+            background-color: black;
+        }
+    section {
+    background: black;
+    width: auto;
+    height: auto;
+    padding-top: 2%;
+    padding-left: 25%;
+    padding-right: 25%;
+    color: rgb(187, 187, 187);
+    /* color: rgb(177, 149, 249); */
+}
+
+
+#personal {
+    text-align: center;
+    font-size: 33px;
+}
+p{
+    text-align: justify;
+
+}
+
+
+#parte0>a{
+    color: rgb(182, 191, 191);
+    text-decoration: none;
+    transition: font-size 0.2s ease-in-out;
+    font-size: 40px;
+    text-align: center;
+
+}
+
+#parte0>a:hover{
+    font-size: 50px;
+    color: rgb(195, 248, 141);
+}
+
+.cont {
+            position: relative;
+            width: 100%;
+            height: 80vh;
+            margin: 0 auto;           
+        }
+
+#imgfin{
+
+    width: 250px;
+    height: 250px;
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/729/337/215/black-background-monochrome-minimalism-xkcd-wallpaper-preview.jpg");
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+    margin-top: -8%;
+}
+    </style>
+    <div id="navbar-container"></div>
+</head>
+<body>
+    
+<div class="cont">
+    <section id="personal">
+        <div id="parte0">
+            
+                    <p>En 2021 fuí admitida en el programa Misiontic2022, lo cual despertó mi interes por el desarrollo
+                        web y móvil. A partir de este nuevo interes en esta area especifica de la programación me
+                        enliste en un programa de Tecnología en analisis y desarrollo de Software, que actualmente me encuentro cursando. </p>
+
+                        <br>
+                        <a href="https://www.hackerrank.com/silvibecerra681" target="_blank">Hackerrank <img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/160_Hackerrank_logo_logos-512.png" alt="" width="90" height="80"></a>
+                        <br>
+                        <br>
+                        <a href="https://github.com/silviabec" target="_blank">Github <img src="https://visualpharm.com/assets/720/Github-595b40b65ba036ed117d442f.svg"  alt=""  width="150" height="100"></a>
+                                                
+                        <div id="imgfin">
+
+                        </div>
+                        
+                        
+    
+                        
+        </div>
+        <!-- <img id="img-final" src="https://c4.wallpaperflare.com/wallpaper/729/337/215/black-background-monochrome-minimalism-xkcd-wallpaper-preview.jpg">  -->
+    </section>
+    
+</div>
+
+    
+        <script>
+            fetch('navbar.html')
+                .then(response => response.text())
+                .then(data => {
+                    const navbarContainer = document.getElementById('navbar-container');
+                    navbarContainer.innerHTML = data;
+                })
+                .catch(error => console.error(error));
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
